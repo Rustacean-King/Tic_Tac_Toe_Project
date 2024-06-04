@@ -1,0 +1,113 @@
+.slot {
+    @media (min-width: 450px){
+        width: 130px;  /* mobile width */
+        height: 130px; /* mobile height */  
+    } 
+    @media (min-width: 800px){
+        width: 200px; /* desktop width */
+        height: 200px; /* desktop height */
+    }  
+    border: 4px black solid;  
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 0px;
+    padding: 0px; 
+}
+
+.XorO {
+    max-width: 100%; 
+    max-height: 100%; 
+    width: auto; 
+    height: auto; 
+}
+
+#row1column1,
+#row1column2,
+#row1column3,
+#row2column1,
+#row2column2,
+#row2column3 {
+    border-bottom: 0px;
+}
+
+#row1column1,
+#row1column2,
+#row2column1,
+#row2column2,
+#row3column1,
+#row3column2 {
+    border-right: 0px;
+}
+
+@media (max-width: 450px) {
+    #row1column1,
+    #row2column1,
+    #row3column1 {
+        padding-left: 1px;
+    }
+}
+
+@media (max-width: 450px) {
+    #row1column3,
+    #row2column3,
+    #row3column3 {
+        padding-right: 1px;
+    }
+}
+
+.row.no-gutter {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+}
+
+.row.no-gutter [class*='col-'],
+.row.no-gutter [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+#restartbutton {
+    border: 3px white solid;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    margin-left: 85%;
+    padding: 4px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+}
+
+#welcome_sign {
+    background-color: rgb(14, 14, 14);
+    color: white;
+    height: 90px;
+    margin-bottom: 2%;
+    @media (min-width: 450px){
+        margin-bottom: 20%;
+    }
+    @media (min-width: 800px) {
+        margin-bottom: 8%; /* desktop margin */
+    }
+    
+}
+
+#welcome_heading {
+    font-family: "Inter";
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" -10;
+}
+
+#playingboard {
+    width: fit-content;
+    padding: 0px;
+    margin-bottom: 2%;  
+}
