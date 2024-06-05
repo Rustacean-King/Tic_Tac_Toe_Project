@@ -1,22 +1,20 @@
 .slot {
-    @media (min-width: 320px){
-        width: 100px;  /* mobile width */
-        height: 100px; /* mobile height */  
-    } 
-    @media (min-width: 600px){
-        width: 140px;  /* tablet width */
-        height: 140px; /* tablet height */ 
-    }
-    @media (min-width: 800px){
-        width: 200px; /* desktop width */
-        height: 200px; /* desktop height */
-    }  
-    border: 4px black solid;  
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
+    width: 100px; /* Default width for game slots */
+    height: 100px; /* Default height for game slots */
+    border: 4px black solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0px;
-    padding: 0px; 
+    padding: 0px;
+}
+
+/* Media query for smaller screens like iPhone SE */
+@media (max-width: 375px) {
+    .slot {
+        width: 60px; /* Adjusted width for smaller screens */
+        height: 60px; /* Adjusted height for smaller screens */
+    }
 }
 
 .XorO {
@@ -111,7 +109,8 @@
 }
 
 #playingboard {
-    width: fit-content;
-    padding: 0px;
-    margin-bottom: 2%;  
+    width: 100%; /* Make the game board container full width */
+    max-width: 360px; /* Limit the maximum width of the game board container */
+    margin: 0 auto; /* Center the game board container horizontally */
+    padding: 10px;
 }
