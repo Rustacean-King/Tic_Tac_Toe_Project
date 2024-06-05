@@ -1,8 +1,12 @@
 .slot {
-    @media (max-width: 420px) and (min-width: 320px){
-        width: 130px;  /* mobile width */
-        height: 130px; /* mobile height */  
+    @media (min-width: 320px){
+        width: 100px;  /* mobile width */
+        height: 100px; /* mobile height */  
     } 
+    @media (min-width: 600px){
+        width: 140px;  /* tablet width */
+        height: 140px; /* tablet height */ 
+    }
     @media (min-width: 800px){
         width: 200px; /* desktop width */
         height: 200px; /* desktop height */
@@ -88,8 +92,8 @@
     color: white;
     height: 90px;
     margin-bottom: 2%;
-    @media (min-width: 450px){
-        margin-bottom: 20%;
+    @media (min-width: 320px){
+        margin-bottom: 14%;
     }
     @media (min-width: 800px) {
         margin-bottom: 8%; /* desktop margin */
