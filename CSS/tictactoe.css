@@ -1,7 +1,7 @@
 .slot {
     @media (min-width: 320px){
-        width: 100px;  /* mobile width */
-        height: 100px; /* mobile height */  
+        width: 50px;  /* mobile width */
+        height: 50px; /* mobile height */  
     } 
     @media (min-width: 600px){
         width: 140px;  /* tablet width */
